@@ -38,10 +38,10 @@ class PuppetMaster {
         - Delay before screenshot is taken to allow for website dependencies to load [int],
         - Relative file path of this script for screenshots to be saved [string]
      */
-    constructor(url, delay_ms, relativeFilePath) {
+    constructor(url, delayMs, relativeFilePath) {
         if (url && delay_ms && relativeFilePath) {
             this.url = url;
-            this.delay = delay_ms;
+            this.delay = delayMs;
             this.filePath = relativeFilePath;
 
             this.runPuppeteer()
