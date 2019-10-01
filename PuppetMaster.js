@@ -70,7 +70,7 @@ class PuppetMaster {
             console.log('Generating screenshots for ' + this.url + '...');
 
             for (let i = 0; i < this.viewports.length; i++) {
-                const page =  await this.browser.newPage();
+                const page = await this.browser.newPage();
 
                 await page.setViewport({
                     width: this.viewports[i].viewport.width,
